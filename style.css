@@ -1,0 +1,355 @@
+* {
+    margin: 0pc;
+    padding: 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: whitesmoke;
+    /* background-image: url(nature.jpeg); */
+    color: black;
+    font-family: Open Sans;
+}
+.nav-bar {
+    background-color: white;
+    height: 80px;
+    padding: 0 20px 0 20px;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    border: 0.25px solid black;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.nav-opts {
+    display: flex;
+    font-size: 1.25rem;
+    text-decoration:none;
+    align-items: center;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 18px 0 18px;
+    color: black;
+}
+
+.nav-bar a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+/*----------------------------*/
+
+#firstSec {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#firstSec div {
+    width: 40%;
+}
+
+.box1 {
+    font-size: 1.75rem;
+}
+
+.box1 h1 {
+    font-size: 60px;
+}
+.box2 img {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+/*----------------------------*/
+
+#secondSec {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.25rem;
+    padding: 90px;
+
+}
+#secondSec .box4 {
+    width: 30%;
+}
+
+#secondSec .box3 {
+    width: 60%;
+}
+
+.box4 img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.box3 {
+    flex-basis: 60%;
+}
+
+.box3 p {
+    font-size: 1.75rem;
+}
+.box3 h1 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.box3 h3 {
+    margin-top: 30px;
+    display: inline-block;
+}
+.box3 #skill-p {
+    display: inline;
+}
+
+/*--------------------------------------*/
+
+#thirdSec {
+    margin-top: 100px;
+    text-align: center;
+    padding: 50px;
+}
+
+#thirdSec h1{
+    font-size: 3rem;
+    font-weight:800;
+}
+
+.card-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.card {
+    margin: 15px;
+}
+
+.card img {
+    width: 80%;
+    border: 0.5px solid black;
+}
+
+.btn {
+    display: inline-block;
+    margin: 45px;
+    padding: 12px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 6px;
+    color: white;
+}
+
+
+/* --------------------------------- */
+
+#fourthSec {
+    margin: 100px;
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left {
+    flex-basis: 35%;
+}
+
+.right {
+    flex-basis: 60%;
+}
+
+.left p {
+    margin-top: 30px;
+}
+.left p i {
+    margin-right: 8px;
+}
+.social-icons {
+    margin-top: 30px;
+    
+}
+.social-icons a {
+    color:black;
+}
+
+.btn.btn2 {
+    margin: 30px 0;
+}
+.right input, .right textarea{
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 1.35rem;
+    border: 0.5px solid black;
+    border-radius: 7px;
+    padding: 10px;
+    background-color: rgb(225, 222, 222);
+}
+
+i {
+    color: black;
+}
+
+
+/* ----------------------------------------------- */
+@media (max-width: 600px) {
+    .nav-bar {
+        height: auto;
+        min-height: 70px;
+        flex-direction: column;
+        padding: 15px 10px;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .nav-opts {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 1rem;
+    }
+
+    .nav-bar a {
+        margin: 3px;
+        padding: 7px;
+    }
+
+    #firstSec {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    #firstSec div {
+        width: 100%;
+    }
+
+    .box1 {
+        font-size: 1.2rem;
+    }
+
+    .box1 h1 {
+        font-size: 38px;
+    }
+
+    .box2 img {
+        width: 90%;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+
+    #secondSec {
+        padding: 40px 20px;
+        flex-direction: column;
+    }
+
+    #secondSec .box3,
+    #secondSec .box4 {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .box3 h1 {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    .box3 p {
+        font-size: 1.2rem;
+    }
+
+    .box4 {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .box4 img {
+        width: 80%;
+    }
+
+
+    #thirdSec {
+        margin-top: 50px;
+        padding: 30px 15px;
+    }
+
+    #thirdSec h1 {
+        font-size: 2.2rem;
+    }
+
+    .card-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+    .card img {
+        width: 75%;
+    }
+
+    .btn {
+        margin: 30px 10px;
+    }
+
+    #fourthSec {
+        margin: 50px 20px;
+        font-size: 1.2rem;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .left,
+    .right {
+        flex-basis: 100%;
+    }
+
+    .left p {
+        margin-top: 20px;
+    }
+
+    .right input,
+    .right textarea {
+        box-sizing: border-box;
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .btn.btn2 {
+        margin: 20px 0;
+    }
+}
